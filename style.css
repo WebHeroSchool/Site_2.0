@@ -1,5 +1,73 @@
+body {
+ border: dashed 1px blue;
+ margin: 0;
+}
+
+.wrapper {
+ margin: auto;
+ width: 80%;
+ border: dashed 1px red;	
+}
+
+.header {
+ display: flex;
+ justify-content: space-between;
+ border: dashed 1px green;
+}
+
+.logo {
+ display: inline-block;	
+ border: dashed 1px red;
+ padding: 40px 0;
+}
+
+.menu {
+ display: flex;
+ align-items: center;
+ border: dashed 1px red;
+}
+
+.menu__item {
+ padding: 0 13px;
+ border: dashed 1px red;
+}
+
+.menu__item:last-child {
+ padding-right: 0;
+}
+
+.menu__item_active {}
+
+.main-section {
+ border: dashed 1px blue;
+}
+
+.main-content {
+ border: dashed 1px red;
+}
+
 .main-content__title {
  font-family: Roboto;
  font-weight: 400;
  font-style: normal;
+ border: dashed 1px blue;
 }
+
+.main-content__description {
+ border: dashed 1px red;
+}
+
+.main-content__button {
+border: dashed 1px green;
+}
+
+.image-content {
+ border: dashed 1px green;
+}
+
+.image-content__image {
+ border: dashed 1px blue;
+}
+
+
+
