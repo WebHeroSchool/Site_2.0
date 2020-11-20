@@ -4,26 +4,25 @@ body {
 
 .wrapper {
  margin: auto;
- width: 68%;	
+ width: 70%;	
 }
 
 .header {
  display: flex;
  justify-content: space-between;
- margin-bottom: 100px;
 }
 
 .logo {	
  position: relative;
  padding: 40px 0;
- padding-left: 44px;
+ padding-left: 61px;
  font: bold 24px/31px pt_serif, arial, helvetica, sans-serif;
 }
 
 .logo__circle {
  position: absolute;
- left: 0;
- top: 50%;
+ left: 16px;
+ top: 49%;
  transform: translateY(-50%);
  width: 28px;
  height: 28px;
@@ -36,24 +35,24 @@ body {
 }
 
 .logo__circle_color_blue {
- left: 8px;
- top: 56%;
+ left: 24px;
+ top: 55%;
  background: #C8DBFB;
 }
 
 .menu {
- display: flex;
- align-items: center;
+ display: inline-block;
+ margin-top: 50px;
 }
 
 .menu__item:last-child {
- margin-right: 0;
+ margin-right: 3px;
 }
 
 .menu__item {
  position: relative;
- margin-right: 26px;
- font: 500 18px/21px Roboto, arial, helvetica, sans-serif;
+ margin-right: 22px;
+ font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
  color: #000;
  text-decoration: none;
  transition: opacity .5s;
@@ -81,14 +80,16 @@ body {
 }
 
 .main {
- padding: 0 53% 100px 0;
- background: top right no-repeat url(img/mainImg.svg);
+ padding: 0 53% 100px 16px;
+ background: 100% 66% no-repeat url(img/mainImg.svg);
  background-size: 514px 439px;
+ background-position: ;
 }
 
 .main__title {
+ padding-top: 102px;
  margin: 0 0 40px 0;
- font: bold 50px/66px pt_serif, arial, helvetica, sans-serif;
+ font: bold 50px/65px pt_serif, arial, helvetica, sans-serif;
 }
 
 .main__title-text_highlight {
@@ -96,7 +97,7 @@ body {
 }
 
 .main__subtitle {
-margin: 0 0 41px 0;
+margin: 0 0 42px 0;
 font: 500 18px/21px Roboto, arial, helvetica, sans-serif;
 }
 
@@ -104,7 +105,7 @@ font: 500 18px/21px Roboto, arial, helvetica, sans-serif;
  position: relative;
  display: inline-block;
  font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
- padding: 14px 16px;
+ padding: 14.5px 16px;
  text-decoration: none;
  background: #0056EC;
  color: #fff;
