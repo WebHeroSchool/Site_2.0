@@ -4,7 +4,7 @@ body {
 
 .wrapper {
  margin: auto;
- width: 80%;	
+ width: 70%;	
 }
 
 .header {
@@ -15,14 +15,14 @@ body {
 .logo {	
  position: relative;
  padding: 40px 0;
- padding-left: 44px;
+ padding-left: 61px;
  font: bold 24px/31px pt_serif, arial, helvetica, sans-serif;
 }
 
 .logo__circle {
  position: absolute;
- left: 0;
- top: 50%;
+ left: 16px;
+ top: 49%;
  transform: translateY(-50%);
  width: 28px;
  height: 28px;
@@ -35,24 +35,24 @@ body {
 }
 
 .logo__circle_color_blue {
- left: 8px;
- top: 56%;
+ left: 24px;
+ top: 55%;
  background: #C8DBFB;
 }
 
 .menu {
- display: flex;
- align-items: center;
+ display: inline-block;
+ margin-top: 50px;
 }
 
 .menu__item:last-child {
- margin-right: 0;
+ margin-right: 3px;
 }
 
 .menu__item {
  position: relative;
- margin-right: 26px;
- font: 500 18px/21px Roboto, arial, helvetica, sans-serif;
+ margin-right: 22px;
+ font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
  color: #000;
  text-decoration: none;
  transition: opacity .5s;
@@ -71,31 +71,73 @@ body {
 }
 
 .menu__item:hover {
- opacity: .5;
+ opacity: .6;
 }
 
 .menu__item:hover:after {
-opacity: 1;
-width: 100%;
+ opacity: 1;
+ width: 100%;
 }
 
-.main-section {}
-
-.main-content {}
-
-.main-content__title {
- font: bold 66px/87px pt_serif, arial, helvetica, sans-serif;
+.main {
+ padding: 0 53% 100px 16px;
+ background: 100% 66% no-repeat url(img/mainImg.svg);
+ background-size: 514px 439px;
+ background-position: ;
 }
 
-.main-content__description {
-font: 400 22px/26px Roboto;
+.main__title {
+ padding-top: 102px;
+ margin: 0 0 40px 0;
+ font: bold 50px/65px pt_serif, arial, helvetica, sans-serif;
 }
 
-.main-content__button {}
+.main__title-text_highlight {
+ background: #ECF3FF;
+}
 
-.image-content {}
+.main__subtitle {
+margin: 0 0 42px 0;
+font: 500 18px/21px Roboto, arial, helvetica, sans-serif;
+}
 
-.image-content__image {}
+.main__button {
+ position: relative;
+ display: inline-block;
+ font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
+ padding: 14.5px 16px;
+ text-decoration: none;
+ background: #0056EC;
+ color: #fff;
+ border-radius: 4px;
+ transition: opacity .5s;
+}
 
+.main__button:hover {
+ opacity: .8;
+}
 
+.main__button:before {
+ content: '';
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 24px;
+ height: 100%;
+ background-color: #fff;
+ opacity: .5;
+ transform: translateX(-50px) skewX(-45deg);
+}
 
+.main__button:hover:before {
+ animation: move-light .8s;
+}
+
+@keyframes move-light {
+ 0% {
+  transform: translateX(-50px) skewX(-45deg);
+  } 
+ 100% {
+  transform: translateX(240px) skewX(-45deg);
+  }
+}
