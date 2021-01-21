@@ -132,11 +132,11 @@ h1,h2,h3,h4,h5,h6 {font-size: inherit;font-weight: 400;}
 	background: #0056EC;
 	color: #fff;
 	border-radius: 4px;
-	transition: opacity .5s;
+	transition: .4s;
 	margin-bottom: 236px;
 }
 .main__button:hover {
-	opacity: .8;
+	background: #00AD9F;
 }
 .main__button:before {
 	content: '';
@@ -148,9 +148,10 @@ h1,h2,h3,h4,h5,h6 {font-size: inherit;font-weight: 400;}
 	background-color: #fff;
 	opacity: .5;
 	transform: translateX(-51px) skewX(-45deg);
+	animation: move-light 1.8s infinite;
 }
 .main__button:hover:before {
-	animation: move-light .8s;
+	animation: none;
 }
 @keyframes move-light {
 	0% {
@@ -162,7 +163,6 @@ h1,h2,h3,h4,h5,h6 {font-size: inherit;font-weight: 400;}
 }
 .main__button:active {
 	background: #EF832B;
-	opacity: 1;
 }
 @media (max-width: 1650px){
 	.wrapper {
